@@ -13,12 +13,12 @@ const Todos = () => {
         {todos.map((todo) => (
           <div
             key={todo.id}
-            className="bg-white p-2 rounded shadow flex items-center"
+            className="bg-white p-2 rounded shadow flex items-center relative"
           >
             <span className="mr-2">{todo.text}</span>
             <button
               onClick={() => dispatch(removeTodo(todo.id))}
-              className="bg-red-500 text-white px-2 py-1 rounded"
+              className="bg-red-500 text-white px-2 py-1 rounded absolute right-2 "
             >
               Delete
             </button>
